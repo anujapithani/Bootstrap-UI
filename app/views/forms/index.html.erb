@@ -9,10 +9,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </head>
 
   <body>
-    <nav class="navbar navbar-light bg-light p-5">
+    <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <h5 class="fw-bold"><i class="bi bi-arrow-clockwise" style="color: blue;"></i>Frontloops</h5>
         <form class="d-flex">
@@ -35,6 +44,7 @@
           <a button type="button" class="btn btn-primary" href="/signup">Take this Challenge</button></a> 
           </div>
         </div>
+
         <div class="p-5 d-flex justify-content-betweens bg-primary">
           <div><h2 class="font-bold">Elements</h2>
           <span class="fs-2">$19</span> <span class="text-sm">(Lifetime access)</span>
@@ -62,13 +72,14 @@
         </div>
       </div> 
     </div>
+  
 
-    <div class="container p-4">
-     <div class="row">
-      <div class="col-sm-6">
-        <%= image_tag ("pics/boot.jpg"), width:'500px',height:'450px' %>
+    <div class="container">
+      <div class="row gap-5">
+      <div class="col">
+        <%= image_tag ("pics/lap.jpg"), height:'380px'%>
       </div>
-      <div class="col-sm-6">
+      <div class="col">
         <p class=" fs-2 fw-bold">These challenges will be helpful if you are:</p>
         <h5 class ="p-3"><i class="bi bi-check-circle p-2" style="color: lightgreen;"></i>A novice frontend developer who needs some practice to land a new job</h5>
         <h5 class ="p-3"><i class="bi bi-check-circle p-2" style="color: lightgreen;"></i>Already working as a developer, but feel that you are missing some parts</h5>
@@ -99,16 +110,16 @@
     </div>
 
     <div class="container p-5">
-      <div class="row">
-      <div class="col-sm-6">
+      <div class="row gap-5">
+      <div class="col">
         <p class="fs-2 fw-bold">Get Frontloops certified</p>
         <h5 class ="p-3"><i class="bi bi-check-circle p-2" style="color: lightgreen;"></i>Complete all Frontloops challenges in your course and you'll receive a certification to share on your LinkedIn, CV or personal website.</h5>
         <h5 class ="p-3"><i class="bi bi-check-circle p-2"  style="color: lightgreen;"></i>Demonstrate experience to potential employers</h5>
         <h5 class ="p-3"><i class="bi bi-check-circle p-2" style="color: lightgreen;"></i>Boost your CV and portfolio</h5>
         <h5 class ="p-3"><i class="bi bi-check-circle p-2" style="color: lightgreen;"></i>Verifiable via <a class="text-blue" href="https://info.badgr.com/">Badgr</a></h5>
       </div>
-      <div class="col-sm-6">
-         <%= image_tag ("pics/loops.png"),width:'500px',height:'450px' %>
+      <div class="col">
+         <%= image_tag ("pics/cer.png"),width:'450px'%>
       </div>
       </div>
     </div>
@@ -116,24 +127,24 @@
     <div class="container p-5">
       <p class="fs-2 fw-bold text-center p-2">see what others say about the course</p>
       <div class="row">
-        <div class="col">
+        <div class="col-sm">
            <p><i class="bi bi-person-circle p-3"  style="font-size: 3rem; color: skyblue;"></i>As a frontend developer I write a lot of complex js logic on a daily basis, however it becomes tricky when I need to implement css animations or some complicated layout positioning. That&#39;s why I loved the course - it structured my knowledge and provided best development practices.</p>
            <strong>Anton Olenin</strong>
           <p class="text-sm">Lead Frontend Developer</p>
         </div>
-        <div class="col">
+        <div class="col-sm">
            <p><i class="bi bi-person-circle p-3"  style="font-size: 3rem; color: skyblue;"></i>Recently I started learning frontend technologies and this course helped me to get needed practical skills, fill my portfolio with some real code and finally land a new job as a graduate developer. That is a perfect kickstart for those who are just starting!</p>
            <strong>Anton Datsuk</strong>
            <p class="text-sm">Graduate developer</p>
         </div>
       </div>
       <div class="row">
-         <div class="col">
+         <div class="col-sm">
             <p><i class="bi bi-person-circle p-3"  style="font-size: 3rem; color: skyblue;"></i>Code examples provided after each lesson are great. They really improved my understanding of the frontend patterns and helped me in communication with developers team at work.</p>
             <strong>Paul Farrell</strong>
             <p class="text-sm">UI Designer, Team lead</p>
          </div>
-        <div class="col">
+        <div class="col-sm">
             <p><i class="bi bi-person-circle p-3"  style="font-size: 3rem; color: skyblue;"></i>This course is a burst of fresh ideas for me as a professional, it really helped to see the utter ways to showcase my product still staying functional and elegant at same time.</p>
             <strong>Ester Naomi</strong>
             <p class="text-sm">Product designer</p>
@@ -141,25 +152,25 @@
        </div>
     </div>
     
-    <p class="fs-2 fw-bold text-center p-2">Sign up to Frontloops now and get a free loop from each course</p>
-    <div class="d-flex justify-content-start gap-5 p-5">
-    <div class="p-5  d-flex justify-content-betweens bg-warning">
-       <div><h2 class="font-bold">Markup</h2>
-       <span class="fs-2">$19</span> <span class="text-sm">(Lifetime access)</span>
-       <p class="fs-5">Improve your HTML and CSS skills by solving 30 web interface challenges, then learn from the reference solutions and provided advice.</p>
-       <a button type="button" class="btn btn-primary" href="/signup">Take this Challenge</button></a> 
-    </div>
-    </div>
-    <div class="p-5  d-flex justify-content-betweens bg-primary">
-       <div><h2 class="font-bold">Elements</h2>
-       <span class="fs-2">$19</span> <span class="text-sm">(Lifetime access)</span>
-       <p class="fs-5">Improve your Javascript skills by building 30 interactive widgets from real products, then compare with provided solutions and hints.</p>
-      <a button type="button" class="btn btn-warning" href="/signup">Take this Challenge</button></a> 
-    </div>
-    </div>
-    </div>
-  
-   <footer class="border-top border-sucess">
+    <p class="fs-2 fw-bold text-center p-2">Sign up to Frontloops now and get a freeloop from each course</p>
+    <div class="container p-5">
+      <div class="row gap-5">
+      <div class="col bg-warning p-5">
+          <h2 class="font-bold">Markup</h2>
+          <span class="fs-2">$19</span> <span class="text-sm">(Lifetime access)</span>
+          <p class="fs-5">Improve your HTML and CSS skills by solving 30 web interface challenges, then learn from the reference solutions and provided advice.</p>
+          <a button type="button" class="btn btn-primary" href="/signup">Take this Challenge</button></a> 
+          </div>
+        <div class="col bg-primary p-5">
+          <h2 class="font-bold">Elements</h2>
+          <span class="fs-2">$19</span> <span class="text-sm">(Lifetime access)</span>
+          <p class="fs-5">Improve your Javascript skills by building 30 interactive widgets from real products, then compare with provided solutions and hints.</p>
+          <a button type="button" class="btn btn-warning" href="/signup">Take this Challenge</button></a> 
+          </div>
+        </div>
+      </div>
+     
+   <footer class="border-top border-sucess ">
      <div class="row">
       <div class="col">
         <p>Part of the<a href="https://fullstackheroes.com/">Full Stack Heroes</a> ecosystem.</p>
